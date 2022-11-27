@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="250.0" minWidth="500.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="teacher_login.T_loginViewController">
+   <children>
+      <ImageView fitHeight="155.0" fitWidth="134.0" layoutX="65.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/tl.jpeg" />
+         </image>
+      </ImageView>
+      <Text layoutX="278.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Faculty Login">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtUsername" layoutX="277.0" layoutY="86.0" promptText="username" />
+      <TextField fx:id="txtPass" layoutX="277.0" layoutY="136.0" promptText="password" />
+      <Button layoutX="313.0" layoutY="190.0" mnemonicParsing="false" onAction="#doLogin" prefHeight="35.0" prefWidth="87.0" text="Login">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="wrgLogin" layoutX="283.0" layoutY="59.0" prefHeight="17.0" prefWidth="147.0" />
+   </children>
+</AnchorPane>

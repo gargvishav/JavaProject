@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="300.0" minWidth="500.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login_page.LoginViewController">
+   <children>
+      <ImageView fitHeight="209.0" fitWidth="225.0" layoutX="14.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/student.jpeg" />
+         </image>
+      </ImageView>
+      <Label blendMode="DARKEN" layoutX="276.0" layoutY="46.0" text="Admin Login">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUser" layoutX="291.0" layoutY="125.0" promptText="username" />
+      <TextField fx:id="txtPassword" layoutX="291.0" layoutY="171.0" promptText="password" />
+      <Button layoutX="337.0" layoutY="229.0" mnemonicParsing="false" onAction="#doLogin" text="Login">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="wrongLogin" layoutX="285.0" layoutY="90.0" prefHeight="17.0" prefWidth="170.0" />
+   </children>
+</AnchorPane>
